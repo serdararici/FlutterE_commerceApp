@@ -49,6 +49,7 @@ class TFormatter {
       }
       i = end;
     }
+    return phoneNumber;
   }
   
 
