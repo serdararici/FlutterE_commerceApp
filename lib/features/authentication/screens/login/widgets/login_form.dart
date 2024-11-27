@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_e_commerce_app/features/authentication/screens/signup/signup.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../utils/constants/sizes.dart';
@@ -56,7 +58,7 @@ class TLoginForm extends StatelessWidget {
             const SizedBox(height: TSizes.spaceBtwSections,),
 
             /// Create Account Button
-            SizedBox(width: double.infinity, child: OutlinedButton(onPressed: (){}, child: const Text(TTexts.createAccount),),),
+            SizedBox(width: double.infinity, child: OutlinedButton(onPressed: () => Get.to(() => const SignupScreen()) , child: const Text(TTexts.createAccount),),),
           ],
         ),
       ),
